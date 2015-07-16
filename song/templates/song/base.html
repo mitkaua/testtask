@@ -1,0 +1,28 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сервіс Обліку Студентів - {% block meta_title %}{% endblock meta_title %}</title>
+    <meta name="description" value="Система пошуку музики" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    {% block extra_css %}{% endblock extra_css %}
+</head>
+<body>
+<h1>hi, world</h1>
+<form class="form-horizontal">
+    <div class="form-group form-group">
+        <label for="" class="col-sm-2 control-label">Оберіть виконавця або пісню</label>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" placeholder="Text input" autofocus="autofocus"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+    <!-- Javascripts Inclusion -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
